@@ -1,23 +1,28 @@
 Users
 1、Uname（用户名）
 2、Upassword（用户密码）
-3、ovenCount（烤箱数）
+3、Uicon （头像）
+4、context（个性签名）
+5、phone （手机号）
 Ovens
 1、id(自增id)
-2、bakeCount（烤制次数）
+2、Oname（烤箱名字）
 3、statue（烤箱状态）
 Fruits
-1、name(水果名称)
+1、Fname(水果名称)
 2、mean(烤制方式、使用字符串的方式将所有烤制过程记录下来)
+3、Ficon（头像）
 Notes
 1、noteId（自增id）
 2、id（Oven外键）
 3、Fname（Fruit外键）
 4、startTime（烤制开始时间）
 5、endTime（结束时间）
+6、Uname（Users外键）
 Logs
 1、id（自增id）
 2、noteId（Note外键）
 3、temp（温度）
 4、humi（湿度）
 5、Ltime（时间）
+6、Level（当前档位）
