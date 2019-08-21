@@ -36,6 +36,7 @@ id int NOT NULL AUTO_INCREMENT,
 noteId int,
 temp varchar(8),
 humi varchar(8),
+Ltime varchar(10),
 primary key(id),
 foreign key(noteId) references Notes(noteId)
 );

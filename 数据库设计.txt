@@ -20,3 +20,4 @@ Logs
 2、noteId（Note外键）
 3、temp（温度）
 4、humi（湿度）
+5、Ltime（时间）
