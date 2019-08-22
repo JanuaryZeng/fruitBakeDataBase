@@ -7,7 +7,7 @@ Users
 Ovens
 1、id(自增id)
 2、Oname（烤箱名字）
-3、statue（烤箱状态）
+3、Ostatue（烤箱状态）
 Fruits
 1、Fname(水果名称)
 2、mean(烤制方式、使用字符串的方式将所有烤制过程记录下来)

@@ -12,7 +12,7 @@ phone varchar(12)
 create table Ovens(
 id int NOT NULL AUTO_INCREMENT,
 Oname varchar(10),
-statue varchar(4),
+Ostatus varchar(4),
 primary key (id)
 );
 
