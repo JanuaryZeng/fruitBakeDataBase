@@ -1,0 +1,85 @@
+Users
+1、Uname（用户名）
+2、Upassword（用户密码）
+3、Uicon （头像）
+4、context（个性签名）
+5、phone （手机号）
+
+
+  登录时查询 ，返回该用户的所有信息
+	params.put("Uname", "jan");
+	params.put("Upassword", "123");
+  注册时增加
+	params.put("uname", uname);
+        params.put("upassword", upassword);
+        params.put("phone", utel);
+        params.put("context", usign);
+
+  根据用户id修改该用户的密码
+	params.put("id", LoginActivity.USERID);
+    params.put("upassword", newPassword);
+
+
+  根据用户id修改该用户的信息
+
+
+
+
+Ovens
+1、id(自增id)
+2、Oname（烤箱名字）
+3、statue（烤箱状态）
+
+  查询所有烤箱  返回烤箱的所有信息
+
+  根据烤箱名称修改状态
+	params1.put("ovenname", ovenName);
+	params1.put("statue", "已开始");
+
+
+
+Fruits
+1、Fname(水果名称)
+2、mean(烤制方式、使用字符串的方式将所有烤制过程记录下来)
+3、Ficon（头像）
+
+****4、time（确定每一种水果烤制时间）
+  
+  查询所有水果 返回所有信息
+
+  通过水果名称查询，返回这个水果的信息
+	params.put("fname", textView);
+
+
+Notes
+1、noteId（自增id）
+2、Oname（Oven外键）    ********** 这块儿换成烤箱的名称吧
+3、Fname（Fruit外键）
+4、startTime（烤制开始时间）
+5、endTime（结束时间）
+6、Uname（Users外键）
+
+  增加
+	params.put("oname", HomeAdapter.ovenId);
+	params.put("fname", SelectFruitFragment.FRUITNAME);
+	params.put("startTime", startTime);
+	params.put("endTime", endTime);
+	params.put("Uname", LoginActivity.USERNAME);
+
+  根据烤箱名字查询  返回所有信息
+	params.put("oname", ovenName);
+
+  根据用户名称查询 返回查询的所有
+	params.put("uname", LoginActivity.USERNAME);
+
+  根据id修改结束时间
+	params.put("noteId", id);
+        params.put("endTime", endTime);
+
+Logs
+1、id（自增id）
+2、noteId（Note外键）
+3、temp（温度）
+4、humi（湿度）
+5、Ltime（时间）
+6、Level（当前档位）

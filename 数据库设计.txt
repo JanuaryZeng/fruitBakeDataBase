@@ -5,8 +5,7 @@ Users
 4、context（个性签名）
 5、phone （手机号）
 Ovens
-1、id(自增id)
-2、Oname（烤箱名字）
+1、Oname（烤箱名字）
 3、Ostatue（烤箱状态）
 Fruits
 1、Fname(水果名称)
@@ -14,7 +13,7 @@ Fruits
 3、Ficon（头像）
 Notes
 1、noteId（自增id）
-2、id（Oven外键）
+2、Oname（Oven外键）
 3、Fname（Fruit外键）
 4、startTime（烤制开始时间）
 5、endTime（结束时间）
